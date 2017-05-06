@@ -314,6 +314,7 @@ tbody tr:nth-child(odd) th {
   font-family: "HeavyEquipment";
   font-size: 4rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 .post-title a:hover
 {
