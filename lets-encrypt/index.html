@@ -1,0 +1,80 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="generator" content="Hugo" />
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<title> Let&#39;s Encrypt TLS Certificate Up and Running! &middot; robotanarchy.space </title>
+
+	
+	<link rel="stylesheet" href="/css/poole.css">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/hyde.css">
+	<style type="text/css">
+	@font-face
+	{
+		font-family:"HeavyEquipment";
+		src: url("/fonts/heavyequipment/HeavyEquipment.ttf")
+	}
+	</style>
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon_144x144.png">
+	<link rel="shortcut icon" href="/favicon.png">
+
+	
+	<link href="" rel="alternate" type="application/rss+xml" title="robotanarchy.space" />
+</head>
+
+	<body class="">
+		<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+			<a href="/">
+				<img src="/logo.png?v=2">
+				<h1>robotanarchy<wbr>.space</h1>
+			</a>
+
+			<p class="lead">
+				social, efficient libre tech &amp; its counterparts
+			</p>
+		</div>
+
+		<ul class="sidebar-nav">
+			<li><a href="/">Home</a> </li>
+			<li><a href="/about">About</a> </li>
+			<li><a href="/licenses">Licenses</a> </li>
+			<li><a href="/index.xml">RSS Feed</a> </li>
+			
+		</ul>
+	</div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+				<h1 class="post-title"><a href="/lets-encrypt/">Let&#39;s Encrypt TLS Certificate Up and Running!</a></h1>
+			  <span class="post-date">Saturday, 2015-11-07</span>
+			      <p>Previously this blog simply used a self signed certificate, because I knew that <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>  was about to be released later this year. Of course, this means, that every time anyone has visited the blog, that person would see a big scary warning message, that the connection is not trustworthy.</p>
+
+<p>So two days ago, I got a e-mail titled &ldquo;Let&rsquo;s Encrypt Closed Beta Invite&rdquo;, which told me that I may try to obtain my certificate now. That is, because I&rsquo;ve taken part in the <a href="https://www.eff.org/deeplinks/2015/10/lets-encrypt-enters-private-beta">private beta</a> program, that they have launched. If you&rsquo;d like to join, in the EFF article I&rsquo;ve linked is a link to some <em>Google Forms</em> (that&rsquo;s a bit scary from a privacy point of view!) document, where you can type in your e-mail address and the domain(s) you would like to register. I did that a few weeks ago, I think.</p>
+
+<p>I&rsquo;m not really running a mainstream distribution or webserver and know how to install a certificate myself. So I&rsquo;ve decided to go with <a href="https://github.com/diafygi/letsencrypt-nosudo">letsencrypt-nosudo</a> from Github. As with the official letsencrypt client, it requires python2. The source code is slightly less than 400 SLOC, so I could read through it before using it.</p>
+
+<p>The only thing I&rsquo;d like to see improved is a version that doesn&rsquo;t need python (or any other dependency) at all, so it fits better in sabotage&rsquo;s <a href="https://github.com/sabotage-linux/sabotage/wiki/Project-Goals">philosophy</a> (see minimal bloat section). Someone asked <a href="https://github.com/letsencrypt/acme-spec/issues/67">here</a> for a version with CLI-tools only, but was told that this isn&rsquo;t practical due to <em>JSON Web Signatures</em>, which aren&rsquo;t implemented in any such tools. However, the protocol is open and maybe some day someone will write a tiny C client, that does the same thing as the python script above (assisting you in getting the certificate, not messing with your configs).</p>
+
+<p><em>Back to topic.</em> Let&rsquo;s Encrypt is really awesome and everyone should use it, who doesn&rsquo;t have a valid certificate yet (or even worse, is hosting their services <em>without</em> TLS)! And the automatic installation and configuration in HTTP daemons is a good thing for most people, because it will really spread the usage of TLS, improving peoples privacy a bit every time.</p>
+
+<p>It works!</p>
+
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>

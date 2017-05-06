@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robotanarchy.space</title>
+    <link>/</link>
+    <description>Recent content on robotanarchy.space</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 06 May 2017 09:58:59 +0200</lastBuildDate>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Moved to GitHub pages</title>
+      <link>/moved-to-github/</link>
+      <pubDate>Sat, 06 May 2017 09:58:59 +0200</pubDate>
+      
+      <guid>/moved-to-github/</guid>
+      <description>&lt;p&gt;As it says in the &lt;a href=&#34;https://github.com/robotanarchy/robotanarchy.github.io&#34;&gt;robotanarchy.github.io&lt;/a&gt; repo description:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Got lazy, moved my blog to GitHub.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let me elaborate on that. I do not find as much time to work on this
+blog, as I&amp;rsquo;ve had when I started it initially. Because of my super
+geeky setup, which had involved only &lt;a href=&#34;http://sabotage.tech&#34;&gt;non-standard&lt;/a&gt; &lt;a href=&#34;https://www.hiawatha-webserver.org/&#34;&gt;components&lt;/a&gt;, lots of
+maintenance was needed to keep it working, and especially to keep it
+secure (security patches). If I had more time, I&amp;rsquo;d prefer to run my
+own infrastructure, but right now I clearly can&amp;rsquo;t do this anymore.&lt;/p&gt;
+
+&lt;p&gt;Hello GitHub pages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R.I.P. Penguinphone, Hello CopperheadOS!</title>
+      <link>/CopperheadOS/</link>
+      <pubDate>Tue, 03 Jan 2017 13:20:55 +0100</pubDate>
+      
+      <guid>/CopperheadOS/</guid>
+      <description>
+
+&lt;p&gt;&lt;em&gt;Long article incoming&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;This is sort-of a sad update to my &lt;a href=&#34;/penguinphone&#34;&gt;penguinphone&lt;/a&gt; post. As I wrote there, I had still refused to give in to Android&amp;hellip; this is no longer true. I am using &lt;a href=&#34;https://copperhead.co/android&#34;&gt;CopperheadOS&lt;/a&gt; as my day to day phone now, and bought a new phone for that. As you can see from the lack of both activity in the &lt;a href=&#34;github.com/robotanarchy/penguinphone&#34;&gt;GitHub repo&lt;/a&gt; of penguinphone and from the lack of similar projects for the N900, not much happened either from my side or from the rest of the community (which means in other words, that there is not much left of that community). I guess, that they all have realized sooner or later, that we aren&amp;rsquo;t enough coders/hackers to create an alternative operating system for the N900. I mean even Mozilla with their huge resources and money &lt;a href=&#34;http://www.quirksmode.org/blog/archives/2015/12/firefox_os_is_d.html&#34;&gt;have failed&lt;/a&gt; to create their FirefoxOS for mobile phones (not for the N900, but generally as Android alternative) - this must mean something. Let me elaborate from my point of view, why it is basically an impossible task.&lt;/p&gt;
+
+&lt;h1 id=&#34;fixing-maemo:7d1eb49c46b558ffc84c539c8348e071&#34;&gt;Fixing Maemo&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://maemo.org/&#34;&gt;Maemo&lt;/a&gt; is the stock operating system for the N900. It has hopelessly outdated software (Firefox based browser &amp;ldquo;micro-g&amp;rdquo;, kernel, glibc, openssl, wpa_supplicant, just everything), and some core components are closed-source. The obvious action would be, to try to replace the whole operating system with free software, and also to update all applications. But try to port a newer Firefox version to Maemo, that is as resource efficient, as micro-b for example&amp;hellip; that alone is an impossible task for one developer!&lt;/p&gt;
+
+&lt;h1 id=&#34;replacing-maemo:7d1eb49c46b558ffc84c539c8348e071&#34;&gt;Replacing Maemo&lt;/h1&gt;
+
+&lt;p&gt;So I went on to replace Maemo. I have created a very basic Maemo-like user interface and optimistically hoped to either find the energy to do the rest of the operating system (seems to be impossible now!), or to re-inspire the N900 community to join my effort. As I said in the introduction above, this did not go anywhere.&lt;/p&gt;
+
+&lt;h1 id=&#34;missing-cryptography-applications:7d1eb49c46b558ffc84c539c8348e071&#34;&gt;Missing (Cryptography) Applications&lt;/h1&gt;
+
+&lt;p&gt;Even if someone did update Maemo / make a suitable replacement, that can do basic things such as calls over the cellular network:  You can&amp;rsquo;t do any encrypted messaging and calls with your friends (not counting nerds who know about XMPP etc.)! &lt;a href=&#34;https://signal.org&#34;&gt;Signal&lt;/a&gt; - to name the most prominent example - is an App rolled out fairly well on Android phones and easy enough to use, so you can even install it on your grandma&amp;rsquo;s phone. It replaces the default SMS application, and lets you do encrypted communication whenever two users, who have Signal installed, want to communicate. So this is &lt;em&gt;exactly&lt;/em&gt; the kind of application you would want to use on your self-written operating system. But the bad news is, it really is only available on Android. Sure, there is Chromium plugin, so you could use it on the Desktop - but as I understand, it can only be used in combination with your phone (and on the browser, you can only type messages, but not do any calls). And even if the chromium version would be usable, it would probably eat up all RAM and CPU of the N900!&lt;/p&gt;
+
+&lt;p&gt;This is just one example, the same goes for basically all crypto messengers and for the Tor Browser (&lt;a href=&#34;https://guardianproject.info/apps/orfox&#34;&gt;Orfox&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;It is also not trivial to run Android applications anywhere but on the Android OS, because Android has its own graphics stack. You can&amp;rsquo;t even run the Android apps directly on your regular Linux distribution, although both operating systems build on the same kernel! Even app developers boot up a fully bloated Android VM to get anything done. What we would need, is something like &lt;a href=&#34;https://winehq.org&#34;&gt;WINE&lt;/a&gt;, but there is nothing that is even close (I can&amp;rsquo;t even find the homepage of the &lt;a href=&#34;https://wiki.debian.org/Java/DevJam/2011/Fosdem/JavaSpeakers#IcedRobot&#34;&gt;icedrobot&lt;/a&gt; project anymore!).&lt;/p&gt;
+
+&lt;h1 id=&#34;what-do-we-do-now:7d1eb49c46b558ffc84c539c8348e071&#34;&gt;What do we do now?&lt;/h1&gt;
+
+&lt;p&gt;I guess, we are stuck with Android for phones for quite a while. We should focus on having a truely open and more secure version of it at least. That is the goal of the &lt;a href=&#34;https://www.replicant.us/&#34;&gt;Replicant&lt;/a&gt; project - but as they are also &lt;a href=&#34;http://blog.replicant.us/2016/08/replicant-6-early-work-upstream-work-and-f-droid-issue/&#34;&gt;outdated and insecure&lt;/a&gt; as of now (January 2017: still based on Android 4!), &lt;strong&gt;&lt;a href=&#34;https://copperhead.co/android/&#34;&gt;CopperheadOS&lt;/a&gt; seems to be the only sane choice.&lt;/strong&gt; They keep up with the Android release process, have instant security updates, use open components wherever possible, ship the F-Droid store with open source apps by default. Now even with an own Signal version (that of now can not do calls yet, but that might come at some point in the future).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Just to make this clear:&lt;/strong&gt; If you install &lt;strong&gt;any Android ROM based on an outdated Android&lt;/strong&gt; version (Replicant, Cyanogen, OmniROM, Paranoid Android, you name it), &lt;strong&gt;it just takes &lt;a href=&#34;https://community.spiceworks.com/topic/1090499-android-stagefright-exploit-via-mms&#34;&gt;one MMS&lt;/a&gt;&lt;/strong&gt; for an attacker to have root access to your phone and you won&amp;rsquo;t even notice. It &lt;strong&gt;can read all your passwords, messages, listen to your calls, track your location, record audio and video of you, encrypt your files and blackmail you&lt;/strong&gt; to give them money in exchange for the password/the stolen data (&lt;a href=&#34;https://www.wired.com/2016/12/popcorn-time-ransomware/&#34;&gt;or infect other people&lt;/a&gt;). Cryptography applications like Signal can not protect you from this. It is irresponsible to have an outdated Android version, if you know &lt;em&gt;anything&lt;/em&gt; about security.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; It is also possible to create your own version of CopperheadOS, with a different mix of security. You can have the Google Play store installed (negative impact on security, because you must trust closed source software), but then you can use the stock Signal version (positive impact on security, because phone calls work there, and it is generally the only version, that is officially supported from OpenWhisperSystems, its authors) and possibly route everything through TOR (positive impact on privacy). Then again, you MUST create your own derivate version whenever there is an updated version of CopperheadOS available, especially when it is a security update. From my experience, these updates come every week or so! If you are interested in that trade-off, check out &lt;a href=&#34;https://github.com/mikeperry-tor/mission-improbable&#34;&gt;mission-improbable&lt;/a&gt;, which does just that.&lt;/p&gt;
+
+&lt;p&gt;You may have noted, that CopperheadOS is only available for a very limited selection of devices. If you are a hacker, and your phone fulfills &lt;a href=&#34;https://www.reddit.com/r/CopperheadOS/comments/5lgtrt/what_qualifies_a_device_for_support/dbvlhhc/&#34;&gt;the requirements&lt;/a&gt;, try to port it and collaborate with the project.&lt;/p&gt;
+
+&lt;p&gt;Let me end this post with a quote about CyanogenMod - which does not make the situation better. It is completly revolving now anyway, as the company behind it has ceased (they are rebranding it to &lt;a href=&#34;https://lineageos.org/&#34;&gt;LineageOS&lt;/a&gt; and right now have not made a single release yet). So CopperheadOS was once based on CyanogenMod and switched (&lt;a href=&#34;https://www.reddit.com/r/CopperheadOS/comments/4shxaj/questions_about_this_rom/d59tcdi/&#34;&gt;source&lt;/a&gt;):&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;When we used to be based on CyanogenMod, we found several local privilege escalation vulnerabilities in su exposed to all apps even with it disabled, and it&amp;rsquo;s not entirely fixed. In general code written by the ROM community puts features first and isn&amp;rsquo;t mature or well-reviewed code. It&amp;rsquo;s not written with security in mind. It&amp;rsquo;s counter-productive to use it for security reasons.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;I really wish we had more alternatives (even for &amp;ldquo;Android distributions&amp;rdquo;), but right now I can only recommend CopperheadOS. Rest in peace, N900.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>stali prereleased</title>
+      <link>/stali/</link>
+      <pubDate>Sat, 23 Apr 2016 19:07:40 +0200</pubDate>
+      
+      <guid>/stali/</guid>
+      <description>&lt;p&gt;No, this post is &lt;em&gt;not&lt;/em&gt; about the &lt;a href=&#34;https://en.wikipedia.org/wiki/Stalin&#34;&gt;radical dictator&lt;/a&gt; whose regime is responsible for the death of millions of people. If you&amp;rsquo;re like me, that idea pops directly into your head when you read about &lt;em&gt;stali&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;The only connection from the above to what I&amp;rsquo;m writing about today may be the word &lt;em&gt;radical&lt;/em&gt;. It&amp;rsquo;s &lt;a href=&#34;http://suckless.org&#34;&gt;suckless.org&lt;/a&gt;&amp;rsquo;s very own Linux distribution: &lt;a href=&#34;http://sta.li&#34;&gt;stali&lt;/a&gt;, which stands for static linux. They link &lt;strong&gt;everything&lt;/strong&gt; statically, and besides that, do everything you would expect from their &lt;a href=&#34;http://suckless.org/philosophy&#34;&gt;philosopy&lt;/a&gt; (which is ideogically not far away from &lt;a href=&#34;/about&#34;&gt;my own&lt;/a&gt; as you may have noticed): No systemd, musl libc, better security and relieability through minimalism and what not. What really stands out in 2016 is using &lt;code&gt;git&lt;/code&gt; as binary package manager. Here is &lt;a href=&#34;http://sta.li/upgrade&#34;&gt;their version&lt;/a&gt; of &lt;a href=&#34;https://wiki.archlinux.org/index.php/Pacman_rosetta&#34;&gt;&lt;code&gt;pacman -Syu&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;; sudo su
+# cd /
+# git pull
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Stali is quite old actually, from their front page it looks like they have revised their goals in 2010 (so it is even older) &amp;ndash; and for a very long time they have had nothing to show from the distribution, except for their interesting ideas. In the meantime, &lt;a href=&#34;http://sabotage.tech/&#34;&gt;sabotage&lt;/a&gt; appeared with similar goals (that&amp;rsquo;s the operating system running on this very webserver) and I thought stali would have more or less set the ideas for sabotage and that&amp;rsquo;s it &amp;ndash; they would not go anywhere.&lt;/p&gt;
+
+&lt;p&gt;But I was wrong, there has finally been a release of stali this month (&lt;a href=&#34;https://www.reddit.com/r/linux/comments/4eg0sw/stali_linux_sees_its_first_public_prerelease/&#34;&gt;reddit&lt;/a&gt;, &lt;a href=&#34;http://www.infoworld.com/article/3048737/open-source-tools/stali-distribution-smashes-assumptions-about-linux.html&#34;&gt;infoworld&lt;/a&gt;)! This distro is certainly not for averange Ubuntu Joe, but if you&amp;rsquo;re either looking for a minimal Linux kernel based operating system or want to learn about interesting design decisions in order to create one yourself, &lt;strong&gt;&lt;a href=&#34;http://sta.li&#34;&gt;go check it out!&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>penguinphone</title>
+      <link>/penguinphone/</link>
+      <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/penguinphone/</guid>
+      <description>&lt;p&gt;I still refuse to give in to Android and other &amp;ldquo;modern&amp;rdquo; smartphone operating systems. Read my &lt;a href=&#34;/about&#34;&gt;about&lt;/a&gt; page to get an idea why I dislike them.&lt;/p&gt;
+
+&lt;p&gt;Consequently, I have planned to create my own perfect mobile phone GNU/Linux distribution for several years. My focus has shifted a lot from a statically compiled base distribution with carefully crafted base packages (basically &lt;a href=&#34;https://github.com/sabotage-linux/sabotage&#34;&gt;sabotage&lt;/a&gt;) over an all-crypto phone, that would only work over Wifi and protect metadata (something like &lt;a href=&#34;https://github.com/ricochet-im/ricochet&#34;&gt;Ricochet&lt;/a&gt;) to what it is now.&lt;/p&gt;
+
+&lt;p&gt;I still want to have all the good crypto stuff, but at the same time, I personally need a phone that &amp;ldquo;just works&amp;rdquo; with the uncrypted legacy systems. That is, making normal phone calls and writing SMS. I&amp;rsquo;d rather do that from a proper GNU/Linux phone, than from a normal phone over which I have even less control.&lt;/p&gt;
+
+&lt;p&gt;So I have started with the basics - getting a normal GNU/Linux usable on the phone. With phone, of course, I mean the &lt;a href=&#34;https://en.wikipedia.org/wiki/Nokia_N900&#34;&gt;N900&lt;/a&gt; and with GNU/Linux I have decided to go with &lt;a href=&#34;https://github.com/dderby/debian900&#34;&gt;debian900&lt;/a&gt;. The latter choice was made, because there aren&amp;rsquo;t many &lt;em&gt;real&lt;/em&gt; GNU/Linux distributions, that somehow can work on the N900. &lt;a href=&#34;http://talk.maemo.org/showthread.php?t=81892&#34;&gt;Arch Linux ARM on N900&lt;/a&gt; was promising, but it is unmaintained as of now - and unlike the debian900 scripts, it relied on adding an extra repository with the kernel in it, rather than providing a script, that just builds the latest kernel with N900 patches from source.&lt;/p&gt;
+
+&lt;p&gt;Some notes about Debian - I will definitely keep it supported with my project (because it should run on all distributions), but I might switch to another distribution as base system at some point. I like, that Debian made the most progress on &lt;a href=&#34;https://wiki.debian.org/ReproducibleBuilds&#34;&gt;reproducible builds&lt;/a&gt; so far, and how many pre-packaged applications there are. However, I am not a huge systemd fan and I find it incredibly hard to write Debian packages compared to Arch PKGBUILDs, sabotage recipies and &lt;a href=&#34;http://www.voidlinux.eu/&#34;&gt;Void Linux&lt;/a&gt; whateveryoucallthembuildscripts. So I might switch to Void in the long run.&lt;/p&gt;
+
+&lt;p&gt;Back to topic. I write this blog post, because I have released the first public version of penguinphone. On &lt;a href=&#34;https://github.com/robotanarchy/penguinphone&#34;&gt;GitHub&lt;/a&gt; and in the &lt;a href=&#34;https://talk.maemo.org/showthread.php?p=1498779&#34;&gt;talk.maemo.org&lt;/a&gt; forums. Right now, it extends i3 (yes, the tiling window manager) with touch buttons and menus to launch and switch applications, and for closing the currently running application. Doesn&amp;rsquo;t sound like much yet, but it comes with a nice, minimal development environment (Xephyr, run another X server inside your X server) and has highly efficient C code and everything valgrind-tested. And it will be compatible with Wayland, once &lt;a href=&#34;https://github.com/SirCmpwn/sway&#34;&gt;sway&lt;/a&gt; gets the necessary features!&lt;/p&gt;
+
+&lt;p&gt;I really think, that it&amp;rsquo;s a start. And I felt like I needed to release this, before I start working on the SMS and phone calls part. Because that will be a whole lot more complex and it will take even more time, until there&amp;rsquo;s something to show off. I plan to  wrap SMS and calls with a XMPP gateway and use the Python program &lt;a href=&#34;https://gajim.org/&#34;&gt;Gajim&lt;/a&gt; or any other XMPP client, that supports the &lt;a href=&#34;https://en.wikipedia.org/wiki/Jingle_%28protocol%29&#34;&gt;Jingle&lt;/a&gt; extension, as an interface.&lt;/p&gt;
+
+&lt;p&gt;Trivia: When I posted my project in &lt;a href=&#34;https://neo900.org/&#34;&gt;#neo900&lt;/a&gt; on freenode IRC, user &lt;em&gt;bencoh&lt;/em&gt; pointed me to an interesting dead project, that had similar goals: &lt;a href=&#34;http://web.archive.org/web/20150206002738/http://nopcode.org/wk.php/FreeNIT&#34;&gt;FreeNIT&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So if all this interests you, go ahead and try penguinphone on your GNU/Linux desktop. It&amp;rsquo;s really easy, &lt;a href=&#34;https://github.com/robotanarchy/penguinphone/#test-environment&#34;&gt;git clone, make testenv&lt;/a&gt; and you have a little X server window inside your normal X server, ready with the full environment to play with.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>sway: tiling on wayland</title>
+      <link>/sway-tiling-on-wayland/</link>
+      <pubDate>Sat, 19 Dec 2015 11:20:51 +0100</pubDate>
+      
+      <guid>/sway-tiling-on-wayland/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;https://github.com/SirCmpwn/sway&#34;&gt;sway&lt;/a&gt; on Wayland the last few days. It tries to be i3 compatible and has an impressive &lt;a href=&#34;https://github.com/SirCmpwn/sway/issues/2&#34;&gt;list of features&lt;/a&gt; supported already, most notably the &lt;em&gt;(still from time to time crashing)&lt;/em&gt; statusbar. The best part is, that sway is being actively developed, so a hand full of good fixes, commits and pull requests arrive every day!&lt;/p&gt;
+
+&lt;p&gt;X11 applications can be started on sway through XWayland and don&amp;rsquo;t look different from other programs.&lt;/p&gt;
+
+&lt;p&gt;There are also other tiling WMs for Wayland, the most promising ones being &lt;a href=&#34;https://github.com/michaelforney/velox&#34;&gt;velox&lt;/a&gt; and &lt;a href=&#34;https://github.com/Cloudef/orbment&#34;&gt;orbment&lt;/a&gt;. But they are not as actively developed, don&amp;rsquo;t support a custom wallpaper (sorry, that&amp;rsquo;s important for me!) and do not aim for i3 compatibility.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Encrypt and the Hiawatha Webserver</title>
+      <link>/lets-encrypt-hiawatha/</link>
+      <pubDate>Sun, 08 Nov 2015 11:41:25 +0100</pubDate>
+      
+      <guid>/lets-encrypt-hiawatha/</guid>
+      <description>&lt;p&gt;&lt;em&gt;UPDATE:&lt;/em&gt; If you &lt;em&gt;don&amp;rsquo;t want to read the source code&lt;/em&gt; of the Let&amp;rsquo;s Encrypt tool you&amp;rsquo;re using, you might as well use the official client, that does a bit more magic. Don&amp;rsquo;t get me wrong, the official client is open source, too. But it has &lt;a href=&#34;https://www.openhub.net/p/letsencrypt/analyses/latest/languages_summary&#34;&gt;way more lines of code&lt;/a&gt;, so it&amp;rsquo;s harder to read through. The Hiawatha user &lt;em&gt;VirginSteele&lt;/em&gt; posted a four-step tutorial &lt;a href=&#34;https://www.hiawatha-webserver.org/forum/topic/2085&#34;&gt;here&lt;/a&gt; (scroll down to the entry with the timestamp &lt;em&gt;12 November 2015, 14:43&lt;/em&gt;). One notable difference is, that you don&amp;rsquo;t need to stop the webserver there, as the &lt;em&gt;letsencrypt-nosudo&lt;/em&gt; script I&amp;rsquo;m using in my tutorial &lt;a href=&#34;https://github.com/diafygi/letsencrypt-nosudo/issues/18&#34;&gt;can&amp;rsquo;t do this yet&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s a quick rundown of how I&amp;rsquo;ve set up &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt; with my favorite webserver. Read &lt;a href=&#34;/lets-encrypt&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt; for a more verbose story.&lt;/p&gt;
+
+&lt;p&gt;Requirements:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eff.org/deeplinks/2015/10/lets-encrypt-enters-private-beta&#34;&gt;private beta&lt;/a&gt; registration and invite (in the future, this won&amp;rsquo;t be necessary)&lt;/li&gt;
+&lt;li&gt;python2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Steps:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Optional) Add a new user for obtaining the certificate on your system:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;# Busybox syntax, read the man pages for
+# adduser or useradd on your system
+
+root@sabotage ~ # adduser -D -s /bin/zsh letsencrypt
+root@sabotage ~ # su - letsencrypt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download your favorite &lt;a href=&#34;https://github.com/letsencrypt/acme-spec&#34;&gt;ACME&lt;/a&gt; client. I&amp;rsquo;ve used &lt;a href=&#34;https://github.com/diafygi/letsencrypt-nosudo&#34;&gt;letsencrypt-nosudo&lt;/a&gt;, but you can probably do &lt;a href=&#34;https://github.com/diafygi/letsencrypt-nosudo/issues/5&#34;&gt;pretty much the same thing&lt;/a&gt; in manual mode with the official client.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-shell&#34;&gt;letsencrypt@sabotage ~ % git clone &amp;quot;https://github.com/diafygi/letsencrypt-nosudo.git&amp;quot;
+letsencrypt@sabotage ~ % cd letsencrypt-nosudo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Follow the instructions of your ACME client to obtain the certificate, in case of letsencrypt-nosudo they are &lt;a href=&#34;https://github.com/diafygi/letsencrypt-nosudo#example-use&#34;&gt;here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Your directory should look like this now:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;letsencrypt@sabotage ~/letsencrypt-nosudo % ls
+LICENSE      domain.csr   sign_csr.py  user.key
+README.md    domain.key   signed.crt   user.pub
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download the Let&amp;rsquo;s Encrypt intermediate certificate:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# wget works fine as well
+letsencrypt@sabotage ~/letsencrypt-nosudo % curl https://letsencrypt.org/certs/lets-encrypt-x1-cross-signed.pem &amp;gt; lets-encryt-x1-cross-signed.pem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Now comes the Hiawatha specific part &amp;ndash; merge all certificate files into one:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;letsencrypt@sabotage ~/letsencrypt-nosudo % cat domain.key signed.crt lets-encryt-x1-cross-signed.pem &amp;gt; letsencrypt_hiawatha.crt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;As the root user, move the certificate file, change permissions and ownership.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;letsencrypt@sabotage ~/letsencrypt-nosudo % exit
+root@sabotage ~ # cd /etc/hiawatha
+root@sabotage /etc/hiawatha # mv ~letsencrypt/letsencrypt-nosudo/letsencrypt_hiawatha.crt .
+root@sabotage /etc/hiawatha # chown root:root letsencrypt_hiawatha.crt
+root@sabotage /etc/hiawatha # chmod 400 letsencrypt_hiawatha.crt
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Add the certificate to your &lt;a href=&#34;https://www.hiawatha-webserver.org/manpages/hiawatha&#34;&gt;hiawatha.conf&lt;/a&gt;, in the &lt;em&gt;Binding&lt;/em&gt; section for example:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;Binding {
+	Port = 443
+	TLScertFile = /etc/hiawatha/letsencrypt_hiawatha.crt
+	...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Restart your webserver and you&amp;rsquo;re done!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Let&#39;s Encrypt TLS Certificate Up and Running!</title>
+      <link>/lets-encrypt/</link>
+      <pubDate>Sat, 07 Nov 2015 15:32:05 +0100</pubDate>
+      
+      <guid>/lets-encrypt/</guid>
+      <description>&lt;p&gt;Previously this blog simply used a self signed certificate, because I knew that &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;  was about to be released later this year. Of course, this means, that every time anyone has visited the blog, that person would see a big scary warning message, that the connection is not trustworthy.&lt;/p&gt;
+
+&lt;p&gt;So two days ago, I got a e-mail titled &amp;ldquo;Let&amp;rsquo;s Encrypt Closed Beta Invite&amp;rdquo;, which told me that I may try to obtain my certificate now. That is, because I&amp;rsquo;ve taken part in the &lt;a href=&#34;https://www.eff.org/deeplinks/2015/10/lets-encrypt-enters-private-beta&#34;&gt;private beta&lt;/a&gt; program, that they have launched. If you&amp;rsquo;d like to join, in the EFF article I&amp;rsquo;ve linked is a link to some &lt;em&gt;Google Forms&lt;/em&gt; (that&amp;rsquo;s a bit scary from a privacy point of view!) document, where you can type in your e-mail address and the domain(s) you would like to register. I did that a few weeks ago, I think.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not really running a mainstream distribution or webserver and know how to install a certificate myself. So I&amp;rsquo;ve decided to go with &lt;a href=&#34;https://github.com/diafygi/letsencrypt-nosudo&#34;&gt;letsencrypt-nosudo&lt;/a&gt; from Github. As with the official letsencrypt client, it requires python2. The source code is slightly less than 400 SLOC, so I could read through it before using it.&lt;/p&gt;
+
+&lt;p&gt;The only thing I&amp;rsquo;d like to see improved is a version that doesn&amp;rsquo;t need python (or any other dependency) at all, so it fits better in sabotage&amp;rsquo;s &lt;a href=&#34;https://github.com/sabotage-linux/sabotage/wiki/Project-Goals&#34;&gt;philosophy&lt;/a&gt; (see minimal bloat section). Someone asked &lt;a href=&#34;https://github.com/letsencrypt/acme-spec/issues/67&#34;&gt;here&lt;/a&gt; for a version with CLI-tools only, but was told that this isn&amp;rsquo;t practical due to &lt;em&gt;JSON Web Signatures&lt;/em&gt;, which aren&amp;rsquo;t implemented in any such tools. However, the protocol is open and maybe some day someone will write a tiny C client, that does the same thing as the python script above (assisting you in getting the certificate, not messing with your configs).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Back to topic.&lt;/em&gt; Let&amp;rsquo;s Encrypt is really awesome and everyone should use it, who doesn&amp;rsquo;t have a valid certificate yet (or even worse, is hosting their services &lt;em&gt;without&lt;/em&gt; TLS)! And the automatic installation and configuration in HTTP daemons is a good thing for most people, because it will really spread the usage of TLS, improving peoples privacy a bit every time.&lt;/p&gt;
+
+&lt;p&gt;It works!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>G2HR: 0.4.0 Released</title>
+      <link>/g2hr-0.4.0/</link>
+      <pubDate>Tue, 18 Aug 2015 14:01:45 +0200</pubDate>
+      
+      <guid>/g2hr-0.4.0/</guid>
+      <description>&lt;p&gt;Just a quick note, that the &lt;a href=&#34;https://github.com/Bytewerk/gta2-hackers-remix/releases/tag/0.4.0&#34;&gt;0.4.0&lt;/a&gt; version has been finally released! And it fits the feature description announced in the previous post (except for the &amp;lsquo;maybe: rumble support&amp;rsquo; part, that didn&amp;rsquo;t make it in the release).&lt;/p&gt;
+
+&lt;p&gt;Windows installers were REALLY in my way this time, so I might write down my rantastic tale about them soon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>G2HR: What happened so far</title>
+      <link>/g2hr-what-happened-so-far/</link>
+      <pubDate>Tue, 04 Aug 2015 21:18:40 +0200</pubDate>
+      
+      <guid>/g2hr-what-happened-so-far/</guid>
+      <description>&lt;p&gt;Does anyone remember Grand Theft Auto 2 from 1999? It&amp;rsquo;s that top-down game, where you can do many of the things, that you can do in more recent parts of the series. Stealing cars, shooting people, doing missions and so on.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been trying about one month in 2012 and another one in 2013 to get a splitscreen mod going, basically by starting multiple instances in network mode on localhost and moving windows around. Each attempt failed, because I couldn&amp;rsquo;t send input to all windows at once and so I lost interest again.&lt;/p&gt;
+
+&lt;p&gt;I was still amazed by the concept and wanted this hack to happen, so I picked up the project &lt;em&gt;again&lt;/em&gt; in 2014. And this time it really got far: I wrote a component that talked to each GTA2 instance via TCP - and with some additional memory hacking, suddenly it was possible to send fake input to each instance independently!&lt;/p&gt;
+
+&lt;p&gt;To turn it into something usable, the splitscreen hack wouldn&amp;rsquo;t be enough. The users also need a convenient way of controlling their player, so it should have game controller support. And while we&amp;rsquo;re at it, why not make that game controller support work in single player, too?&lt;/p&gt;
+
+&lt;p&gt;Stepping it up, I called the whole thing a &lt;em&gt;meta-mod&lt;/em&gt; that will combine more smaller mods and announced it in the somewhat still alive GTA2 community at the &lt;a href=&#34;http://gtamp.com/forum/viewtopic.php?f=4&amp;amp;t=776&#34;&gt;GTAMP.com forums&lt;/a&gt; under the name &lt;em&gt;GTA2: Hacker&amp;rsquo;s Remix&lt;/em&gt;. This is the home of lots of community based GTA2 content, such as the online gaming lobby &lt;a href=&#34;http://gtamp.com/gta2/gta2-game-hunter/&#34;&gt;GTA2: Game Hunter&lt;/a&gt; and &lt;a href=&#34;http://gtamp.com/gta2/&#34;&gt;Vike&amp;rsquo;s enhanced GTA2&lt;/a&gt; (without that my hacks wouldn&amp;rsquo;t have been possible).&lt;/p&gt;
+
+&lt;p&gt;That thread was started in November, and until January &amp;lsquo;14 I&amp;rsquo;ve had released 5 alpha versions, the last one being &lt;a href=&#34;https://github.com/Bytewerk/gta2-hackers-remix/releases/tag/0.3.2-splitscreen_mod&#34;&gt;0.3.2&lt;/a&gt; which is also the latest version right now. It&amp;rsquo;s feature set consists of the following:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Xbox360-Controller support&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://cloud.githubusercontent.com/assets/7833187/5515798/b998666c-887b-11e4-91ce-8cf9e9a261c2.png&#34;&gt;simple alpha menu&lt;/a&gt;, that launches the normal network dialog for setting up the game&lt;/li&gt;
+&lt;li&gt;merging all instance windows into a big one&lt;/li&gt;
+&lt;li&gt;sound in all windows&lt;/li&gt;
+&lt;li&gt;full Linux support through Wine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So in case you want to try it out right now, go ahead!&lt;/p&gt;
+
+&lt;p&gt;That sounds like pretty much everything there is to do, right? Nope, I&amp;rsquo;ve envisioned lots of other features even in 2012. My goal was to integrate the splitscreen mode in the game menu, so it feels like part of the official game.&lt;/p&gt;
+
+&lt;p&gt;Hacking the game&amp;rsquo;s menu had some big problems (for example: it looks ugly in 32bit color mode), so while I was at it, I&amp;rsquo;ve decided to fully reimplement the menu. And that&amp;rsquo;s the reason why there has not been a release for the past months, something like that can&amp;rsquo;t be done over night.&lt;/p&gt;
+
+&lt;p&gt;Furthermore I thought replacing most AutoIt3 code with C99 and writing something like my own SDL2 GUI toolkit (although not as an external library right now, but maybe in the future) were good ideas. And I still think that they are, though they may have slowed down development some more.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, Black Phoenix, the author of the unfinished OpenGTA2 (aka. OpenGBH) engine allowed me to use the &lt;a href=&#34;https://github.com/u9oqcd4p/OpenGTA2/tree/41557c6773b5a243ea54f1fa1cfc2b9d87bf2f03&#34;&gt;source code&lt;/a&gt; from his C tools (audio, sprite and font parsing!) as base for my code and that surely saved lots of time.&lt;/p&gt;
+
+&lt;p&gt;About 500 commits on github later, the menu was working well, but not polished enough for a release (and code from earlier releases still needs to be re-integrated). In my story telling, it&amp;rsquo;s end of June 2015 and I had to do other stuff again.&lt;/p&gt;
+
+&lt;p&gt;Fast forward a bit more than another month and now it is August &amp;lsquo;15. I want to spend the next ~2 weeks on getting a new release ready, so all that work turns into something usable again. There&amp;rsquo;s a lot to be polished and even some features are missing right now, but we&amp;rsquo;ll see what happens. Features that can be expected:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a menu that looks and feels like the normal GTA2 menu&lt;/li&gt;
+&lt;li&gt;all ressources (fonts, sprites, sounds!) are loaded from the normal game files without converting them&lt;/li&gt;
+&lt;li&gt;the splitscreen mode is integrated into that menu&lt;/li&gt;
+&lt;li&gt;the menu can be controlled with the game controller&lt;/li&gt;
+&lt;li&gt;at least basic config files for controller button mappings&lt;/li&gt;
+&lt;li&gt;simple, optional update notifications&lt;/li&gt;
+&lt;li&gt;a custom credits screen, that can be scrolled through manually (of course it also scrolls automatically)&lt;/li&gt;
+&lt;li&gt;a message shows up in the game, when the controller layout changes&lt;/li&gt;
+&lt;li&gt;maybe: rumble support&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So this is my &amp;ldquo;short&amp;rdquo; summary (really, it could have been far more detailed and technical) of what has happened so far with my &lt;em&gt;GTA2: Hacker&amp;rsquo;s Remix&lt;/em&gt; meta-mod. If you&amp;rsquo;re wondering, why I put so much work in modding a 16 year old game: I&amp;rsquo;ve learned a lot about reverse engineering, coding (especially C) and GTA2 is just fun to play. Also I&amp;rsquo;ll be able to re-use lots of this (eg. the GUI toolkit) in other projects.&lt;/p&gt;
+
+&lt;p&gt;Want to read more? Check out the &lt;a href=&#34;https://github.com/Bytewerk/gta2-hackers-remix/wiki&#34;&gt;github wiki&lt;/a&gt; and the &lt;a href=&#34;http://gtamp.com/forum/viewtopic.php?t=776&#34;&gt;thread&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>online</title>
+      <link>/online/</link>
+      <pubDate>Thu, 30 Jul 2015 18:16:48 +0200</pubDate>
+      
+      <guid>/online/</guid>
+      <description>&lt;p&gt;Yay, my blog is finally online! I will need some time to polish my &lt;a href=&#34;https://github.com/sabotage-linux/sabotage&#34;&gt;sabotage&lt;/a&gt; recipies for mbedtls and &lt;a href=&#34;https://www.hiawatha-webserver.org/&#34;&gt;hiawatha&lt;/a&gt; and put them upstream, but I&amp;rsquo;ll probably get to that the next few days or so &lt;em&gt;(edit: &lt;a href=&#34;https://github.com/sabotage-linux/sabotage/pull/341&#34;&gt;done&lt;/a&gt;)&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m planning to write about &lt;a href=&#34;https://github.com/Bytewerk/gta2-hackers-remix&#34;&gt;G2HR&lt;/a&gt; very soon, and maybe some more details about the software stack I&amp;rsquo;m using on this blog (as mentioned on the &lt;a href=&#34;/about&#34;&gt;about&lt;/a&gt; page).&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s it for today, stay tuned (&lt;a href=&#34;/index.xml&#34;&gt;rss&lt;/a&gt;)!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>licenses</title>
+      <link>/licenses/</link>
+      <pubDate>Thu, 30 Jul 2015 09:01:49 +0200</pubDate>
+      
+      <guid>/licenses/</guid>
+      <description>&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Content Type&lt;/th&gt;
+		&lt;th&gt;License&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;a href=&#34;/logo.png&#34;&gt;My logo&lt;/a&gt; and all other content except for source code listings&lt;/td&gt;
+		&lt;td&gt;
+			&lt;a rel=&#34;license&#34; href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;
+				&lt;img
+					alt=&#34;CC-BY-SA&#34;
+					src=&#34;/cc-by-sa-80x15.png&#34;
+					style=&#34;
+						margin: auto;
+						border-radius: 0px;
+						min-width: 80px;
+						width: 80px;
+						height: 15px;
+				&#34;/&gt;
+			&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;Source code listings only&lt;/td&gt;
+		&lt;td&gt;
+			&lt;a href=&#34;https://creativecommons.org/publicdomain/zero/1.0/&#34;&gt;
+				&lt;img
+					alt=&#34;CC-zero&#34;
+					src=&#34;/cc-zero-80x15.png&#34;
+					style=&#34;
+						margin: auto;
+						border-radius: 0px;
+						min-width: 80px;
+						width: 80px;
+						height: 15px;
+				&#34;/&gt;
+			&lt;/a&gt;
+		&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+
+</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>/about/</link>
+      <pubDate>Tue, 28 Jul 2015 07:48:39 +0200</pubDate>
+      
+      <guid>/about/</guid>
+      <description>
+
+&lt;h3 id=&#34;content:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Content&lt;/h3&gt;
+
+&lt;p&gt;This blog is about good (and sometimes bad) modern information &lt;strong&gt;tech&lt;/strong&gt;nology, how defective and insecure the majority is and how we &lt;em&gt;might be&lt;/em&gt; able to fix it. In my opinion, there are three important characteristics of good software:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://www.gnu.org/philosophy/&#34;&gt;libre&lt;/a&gt;&lt;/strong&gt; (or at least &lt;em&gt;open&lt;/em&gt;) systems&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;efficient&lt;/strong&gt; technology that fulfills &lt;em&gt;all&lt;/em&gt; its quality aspects (security, simplicity, speed, resource usage, maintainability, &amp;hellip;) as perfectly as possible, through the whole stack. More lines of code always mean more bugs!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;no social exploitation:&lt;/strong&gt; it should not exploit anyone in our society through annoying advertising, malware, backdoors, privacy invasion (aka &lt;em&gt;big data&lt;/em&gt;), proprietary formats, patents and so on. One might think that &lt;em&gt;libre software&lt;/em&gt; (and hosters of such) is always free of that crap, but &lt;a href=&#34;https://forum.filezilla-project.org/viewtopic.php?t=32945&#34;&gt;it&lt;/a&gt; &lt;a href=&#34;http://www.wikihow.com/Remove-PDFCreator-Malware&#34;&gt;is&lt;/a&gt; &lt;a href=&#34;http://arstechnica.co.uk/information-technology/2015/06/sourceforge-locked-in-projects-of-fleeing-users-cashed-in-on-malvertising/&#34;&gt;not!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Just to be clear, with the word &lt;em&gt;social&lt;/em&gt; in the tag-line, I do not mean any kind of social network. Sadly all of these fail the principles listed here, even the &lt;em&gt;libre&lt;/em&gt; ones (if you find one that implements &lt;em&gt;end to end&lt;/em&gt; encryption consistently and doesn&amp;rsquo;t offend any of the points listed here, let me know!).&lt;/p&gt;
+
+&lt;p&gt;It is possible to monetize technology and respect these principles at the same time (for example through donations), but that is definitely harder.&lt;/p&gt;
+
+&lt;h3 id=&#34;username:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Username&lt;/h3&gt;
+
+&lt;p&gt;If humanity keeps developing its technology so carelessly and error-prone, one day we might have an anarchy of robots &lt;a href=&#34;http://www.bbc.com/news/technology-33686581&#34;&gt;ruling the earth&lt;/a&gt; ;) Please note that &lt;em&gt;anarchy&lt;/em&gt; often gets confused with &lt;em&gt;anomie&lt;/em&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Anarchy is compared to, or even described as equal to chaos or anomie. However, anarchy is defined by the lack of a ruler, and anomie by the lack of rules. &lt;em&gt;&lt;a href=&#34;http://rationalwiki.org/wiki/Anarchy#Contrast_with_chaos&#34;&gt;(Rational Wiki)&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&#34;software-stack:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Software Stack&lt;/h3&gt;
+
+&lt;p&gt;This blog is powered by:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/sabotage-linux/sabotage&#34;&gt;sabotage&lt;/a&gt; (linux distribution)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.hiawatha-webserver.org/&#34;&gt;hiawatha&lt;/a&gt; (webserver)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt; (static blogging system)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

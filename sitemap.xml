@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2017-05-06T09:58:59+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/moved-to-github/</loc>
+    <lastmod>2017-05-06T09:58:59+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/CopperheadOS/</loc>
+    <lastmod>2017-01-03T13:20:55+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/stali/</loc>
+    <lastmod>2016-04-23T19:07:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/penguinphone/</loc>
+    <lastmod>2016-02-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/sway-tiling-on-wayland/</loc>
+    <lastmod>2015-12-19T11:20:51+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lets-encrypt-hiawatha/</loc>
+    <lastmod>2015-11-08T11:41:25+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/lets-encrypt/</loc>
+    <lastmod>2015-11-07T15:32:05+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/g2hr-0.4.0/</loc>
+    <lastmod>2015-08-18T14:01:45+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/g2hr-what-happened-so-far/</loc>
+    <lastmod>2015-08-04T21:18:40+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/online/</loc>
+    <lastmod>2015-07-30T18:16:48+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/licenses/</loc>
+    <lastmod>2015-07-30T09:01:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2015-07-28T07:48:39+02:00</lastmod>
+  </url>
+  
+</urlset>

@@ -1,0 +1,86 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="generator" content="Hugo" />
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<title> penguinphone &middot; robotanarchy.space </title>
+
+	
+	<link rel="stylesheet" href="/css/poole.css">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/hyde.css">
+	<style type="text/css">
+	@font-face
+	{
+		font-family:"HeavyEquipment";
+		src: url("/fonts/heavyequipment/HeavyEquipment.ttf")
+	}
+	</style>
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon_144x144.png">
+	<link rel="shortcut icon" href="/favicon.png">
+
+	
+	<link href="" rel="alternate" type="application/rss+xml" title="robotanarchy.space" />
+</head>
+
+	<body class="">
+		<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+			<a href="/">
+				<img src="/logo.png?v=2">
+				<h1>robotanarchy<wbr>.space</h1>
+			</a>
+
+			<p class="lead">
+				social, efficient libre tech &amp; its counterparts
+			</p>
+		</div>
+
+		<ul class="sidebar-nav">
+			<li><a href="/">Home</a> </li>
+			<li><a href="/about">About</a> </li>
+			<li><a href="/licenses">Licenses</a> </li>
+			<li><a href="/index.xml">RSS Feed</a> </li>
+			
+		</ul>
+	</div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+				<h1 class="post-title"><a href="/penguinphone/">penguinphone</a></h1>
+			  <span class="post-date">Sunday, 2016-02-14</span>
+			      <p>I still refuse to give in to Android and other &ldquo;modern&rdquo; smartphone operating systems. Read my <a href="/about">about</a> page to get an idea why I dislike them.</p>
+
+<p>Consequently, I have planned to create my own perfect mobile phone GNU/Linux distribution for several years. My focus has shifted a lot from a statically compiled base distribution with carefully crafted base packages (basically <a href="https://github.com/sabotage-linux/sabotage">sabotage</a>) over an all-crypto phone, that would only work over Wifi and protect metadata (something like <a href="https://github.com/ricochet-im/ricochet">Ricochet</a>) to what it is now.</p>
+
+<p>I still want to have all the good crypto stuff, but at the same time, I personally need a phone that &ldquo;just works&rdquo; with the uncrypted legacy systems. That is, making normal phone calls and writing SMS. I&rsquo;d rather do that from a proper GNU/Linux phone, than from a normal phone over which I have even less control.</p>
+
+<p>So I have started with the basics - getting a normal GNU/Linux usable on the phone. With phone, of course, I mean the <a href="https://en.wikipedia.org/wiki/Nokia_N900">N900</a> and with GNU/Linux I have decided to go with <a href="https://github.com/dderby/debian900">debian900</a>. The latter choice was made, because there aren&rsquo;t many <em>real</em> GNU/Linux distributions, that somehow can work on the N900. <a href="http://talk.maemo.org/showthread.php?t=81892">Arch Linux ARM on N900</a> was promising, but it is unmaintained as of now - and unlike the debian900 scripts, it relied on adding an extra repository with the kernel in it, rather than providing a script, that just builds the latest kernel with N900 patches from source.</p>
+
+<p>Some notes about Debian - I will definitely keep it supported with my project (because it should run on all distributions), but I might switch to another distribution as base system at some point. I like, that Debian made the most progress on <a href="https://wiki.debian.org/ReproducibleBuilds">reproducible builds</a> so far, and how many pre-packaged applications there are. However, I am not a huge systemd fan and I find it incredibly hard to write Debian packages compared to Arch PKGBUILDs, sabotage recipies and <a href="http://www.voidlinux.eu/">Void Linux</a> whateveryoucallthembuildscripts. So I might switch to Void in the long run.</p>
+
+<p>Back to topic. I write this blog post, because I have released the first public version of penguinphone. On <a href="https://github.com/robotanarchy/penguinphone">GitHub</a> and in the <a href="https://talk.maemo.org/showthread.php?p=1498779">talk.maemo.org</a> forums. Right now, it extends i3 (yes, the tiling window manager) with touch buttons and menus to launch and switch applications, and for closing the currently running application. Doesn&rsquo;t sound like much yet, but it comes with a nice, minimal development environment (Xephyr, run another X server inside your X server) and has highly efficient C code and everything valgrind-tested. And it will be compatible with Wayland, once <a href="https://github.com/SirCmpwn/sway">sway</a> gets the necessary features!</p>
+
+<p>I really think, that it&rsquo;s a start. And I felt like I needed to release this, before I start working on the SMS and phone calls part. Because that will be a whole lot more complex and it will take even more time, until there&rsquo;s something to show off. I plan to  wrap SMS and calls with a XMPP gateway and use the Python program <a href="https://gajim.org/">Gajim</a> or any other XMPP client, that supports the <a href="https://en.wikipedia.org/wiki/Jingle_%28protocol%29">Jingle</a> extension, as an interface.</p>
+
+<p>Trivia: When I posted my project in <a href="https://neo900.org/">#neo900</a> on freenode IRC, user <em>bencoh</em> pointed me to an interesting dead project, that had similar goals: <a href="http://web.archive.org/web/20150206002738/http://nopcode.org/wk.php/FreeNIT">FreeNIT</a></p>
+
+<p>So if all this interests you, go ahead and try penguinphone on your GNU/Linux desktop. It&rsquo;s really easy, <a href="https://github.com/robotanarchy/penguinphone/#test-environment">git clone, make testenv</a> and you have a little X server window inside your normal X server, ready with the full environment to play with.</p>
+
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>

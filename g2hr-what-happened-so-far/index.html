@@ -1,0 +1,118 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+	<link href="http://gmpg.org/xfn/11" rel="profile">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="generator" content="Hugo" />
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+	<title> G2HR: What happened so far &middot; robotanarchy.space </title>
+
+	
+	<link rel="stylesheet" href="/css/poole.css">
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="/css/hyde.css">
+	<style type="text/css">
+	@font-face
+	{
+		font-family:"HeavyEquipment";
+		src: url("/fonts/heavyequipment/HeavyEquipment.ttf")
+	}
+	</style>
+
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/favicon_144x144.png">
+	<link rel="shortcut icon" href="/favicon.png">
+
+	
+	<link href="" rel="alternate" type="application/rss+xml" title="robotanarchy.space" />
+</head>
+
+	<body class="">
+		<div class="sidebar">
+	<div class="container sidebar-sticky">
+		<div class="sidebar-about">
+			<a href="/">
+				<img src="/logo.png?v=2">
+				<h1>robotanarchy<wbr>.space</h1>
+			</a>
+
+			<p class="lead">
+				social, efficient libre tech &amp; its counterparts
+			</p>
+		</div>
+
+		<ul class="sidebar-nav">
+			<li><a href="/">Home</a> </li>
+			<li><a href="/about">About</a> </li>
+			<li><a href="/licenses">Licenses</a> </li>
+			<li><a href="/index.xml">RSS Feed</a> </li>
+			
+		</ul>
+	</div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+				<h1 class="post-title"><a href="/g2hr-what-happened-so-far/">G2HR: What happened so far</a></h1>
+			  <span class="post-date">Tuesday, 2015-08-04</span>
+			      <p>Does anyone remember Grand Theft Auto 2 from 1999? It&rsquo;s that top-down game, where you can do many of the things, that you can do in more recent parts of the series. Stealing cars, shooting people, doing missions and so on.</p>
+
+<p>I&rsquo;ve been trying about one month in 2012 and another one in 2013 to get a splitscreen mod going, basically by starting multiple instances in network mode on localhost and moving windows around. Each attempt failed, because I couldn&rsquo;t send input to all windows at once and so I lost interest again.</p>
+
+<p>I was still amazed by the concept and wanted this hack to happen, so I picked up the project <em>again</em> in 2014. And this time it really got far: I wrote a component that talked to each GTA2 instance via TCP - and with some additional memory hacking, suddenly it was possible to send fake input to each instance independently!</p>
+
+<p>To turn it into something usable, the splitscreen hack wouldn&rsquo;t be enough. The users also need a convenient way of controlling their player, so it should have game controller support. And while we&rsquo;re at it, why not make that game controller support work in single player, too?</p>
+
+<p>Stepping it up, I called the whole thing a <em>meta-mod</em> that will combine more smaller mods and announced it in the somewhat still alive GTA2 community at the <a href="http://gtamp.com/forum/viewtopic.php?f=4&amp;t=776">GTAMP.com forums</a> under the name <em>GTA2: Hacker&rsquo;s Remix</em>. This is the home of lots of community based GTA2 content, such as the online gaming lobby <a href="http://gtamp.com/gta2/gta2-game-hunter/">GTA2: Game Hunter</a> and <a href="http://gtamp.com/gta2/">Vike&rsquo;s enhanced GTA2</a> (without that my hacks wouldn&rsquo;t have been possible).</p>
+
+<p>That thread was started in November, and until January &lsquo;14 I&rsquo;ve had released 5 alpha versions, the last one being <a href="https://github.com/Bytewerk/gta2-hackers-remix/releases/tag/0.3.2-splitscreen_mod">0.3.2</a> which is also the latest version right now. It&rsquo;s feature set consists of the following:</p>
+
+<ul>
+<li>Xbox360-Controller support</li>
+<li><a href="https://cloud.githubusercontent.com/assets/7833187/5515798/b998666c-887b-11e4-91ce-8cf9e9a261c2.png">simple alpha menu</a>, that launches the normal network dialog for setting up the game</li>
+<li>merging all instance windows into a big one</li>
+<li>sound in all windows</li>
+<li>full Linux support through Wine</li>
+</ul>
+
+<p>So in case you want to try it out right now, go ahead!</p>
+
+<p>That sounds like pretty much everything there is to do, right? Nope, I&rsquo;ve envisioned lots of other features even in 2012. My goal was to integrate the splitscreen mode in the game menu, so it feels like part of the official game.</p>
+
+<p>Hacking the game&rsquo;s menu had some big problems (for example: it looks ugly in 32bit color mode), so while I was at it, I&rsquo;ve decided to fully reimplement the menu. And that&rsquo;s the reason why there has not been a release for the past months, something like that can&rsquo;t be done over night.</p>
+
+<p>Furthermore I thought replacing most AutoIt3 code with C99 and writing something like my own SDL2 GUI toolkit (although not as an external library right now, but maybe in the future) were good ideas. And I still think that they are, though they may have slowed down development some more.</p>
+
+<p>On the other hand, Black Phoenix, the author of the unfinished OpenGTA2 (aka. OpenGBH) engine allowed me to use the <a href="https://github.com/u9oqcd4p/OpenGTA2/tree/41557c6773b5a243ea54f1fa1cfc2b9d87bf2f03">source code</a> from his C tools (audio, sprite and font parsing!) as base for my code and that surely saved lots of time.</p>
+
+<p>About 500 commits on github later, the menu was working well, but not polished enough for a release (and code from earlier releases still needs to be re-integrated). In my story telling, it&rsquo;s end of June 2015 and I had to do other stuff again.</p>
+
+<p>Fast forward a bit more than another month and now it is August &lsquo;15. I want to spend the next ~2 weeks on getting a new release ready, so all that work turns into something usable again. There&rsquo;s a lot to be polished and even some features are missing right now, but we&rsquo;ll see what happens. Features that can be expected:</p>
+
+<ul>
+<li>a menu that looks and feels like the normal GTA2 menu</li>
+<li>all ressources (fonts, sprites, sounds!) are loaded from the normal game files without converting them</li>
+<li>the splitscreen mode is integrated into that menu</li>
+<li>the menu can be controlled with the game controller</li>
+<li>at least basic config files for controller button mappings</li>
+<li>simple, optional update notifications</li>
+<li>a custom credits screen, that can be scrolled through manually (of course it also scrolls automatically)</li>
+<li>a message shows up in the game, when the controller layout changes</li>
+<li>maybe: rumble support</li>
+</ul>
+
+<p>So this is my &ldquo;short&rdquo; summary (really, it could have been far more detailed and technical) of what has happened so far with my <em>GTA2: Hacker&rsquo;s Remix</em> meta-mod. If you&rsquo;re wondering, why I put so much work in modding a 16 year old game: I&rsquo;ve learned a lot about reverse engineering, coding (especially C) and GTA2 is just fun to play. Also I&rsquo;ll be able to re-use lots of this (eg. the GUI toolkit) in other projects.</p>
+
+<p>Want to read more? Check out the <a href="https://github.com/Bytewerk/gta2-hackers-remix/wiki">github wiki</a> and the <a href="http://gtamp.com/forum/viewtopic.php?t=776">thread</a>.</p>
+
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>
