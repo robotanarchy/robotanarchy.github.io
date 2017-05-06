@@ -421,8 +421,6 @@ root@sabotage /etc/hiawatha # chmod 400 letsencrypt_hiawatha.crt
 &lt;p&gt;This blog is powered by:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sabotage-linux/sabotage&#34;&gt;sabotage&lt;/a&gt; (linux distribution)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.hiawatha-webserver.org/&#34;&gt;hiawatha&lt;/a&gt; (webserver)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt; (static blogging system)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
